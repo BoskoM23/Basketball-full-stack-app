@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NBA</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <div class="addPLayers">
+                <label>First Name:</label>
+                <input type="text" id="fname-input" required />
+                <label>Last Name:</label>
+                <input type="text" id="lname-input" required />
+                <label>Team:</label>
+                <input type="text" id="team-input" />
+                <label>Points:</label>
+                <input type="text" id="points-input" />
+                <label>Rebounds:</label>
+                <input type="text" id="rebounds-input" />
+                <label>Asists:</label>
+                <input type="text" id="asists-input" />
+                <button id="add-name-btn">Add Player</button>
+            </div>
+            <br /><br /><br />
+            <div>
+                <input placeholder="search by name" id="search-input" />
+                <button id="search-btn">Search</button>
+            </div>
+
+            <table id="table">
+                <thead>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Team</th>
+                    <th>Points</th>
+                    <th>Rebounds</th>
+                    <th>Asists</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <section hidden id="update-row">
+                <label>Name:</label>
+                <input type="text" id="update-name-input" />
+                <button id="update-row-btn">Update</button>
+            </section>
+            <!-- <section hidden id="add-row">
+                <label>First Name:</label>
+                <input type="text" id="update-name-input" />
+                <label>Last Name:</label>
+                <input type="text" id="update-lname-input" />
+                <label>Team:</label>
+                <input type="text" id="update-team-input" />
+                <label>Points:</label>
+                <input type="text" id="update-points-input" />
+                <label>Rebounds:</label>
+                <input type="text" id="update-rebounds-input" />
+                <label>Asists:</label>
+                <input type="text" id="update-asists-input" />
+                <button id="update-row-btn">Update</button>
+            </section> -->
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
